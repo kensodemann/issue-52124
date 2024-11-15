@@ -11,11 +11,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>
-      Start with Ionic
-      <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
-    </p>
-  </div>
+  <ion-list>
+    <ion-item>
+      <ion-button (click)="openExternal()">Open External</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openSystem()">Open System</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openWebView()">Open Web View</ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>
